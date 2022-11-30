@@ -1153,7 +1153,7 @@ summary,
 .vertical-tabs.no-arrows .nav > li > a {
   padding: 24px 0;
 }
-summary{
+summary {
   user-select: none;
 }
 summary:hover,
@@ -3277,7 +3277,7 @@ div.ppt {
   padding-bottom: 20px;
 }
 .section_padding_bottom_25 > [class*="container"] {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 .section_padding_bottom_30 > [class*="container"] {
   padding-bottom: 30px;
@@ -5544,7 +5544,7 @@ body.boxed {
   background-color: rgba(152, 152, 152, 0.2);
 }
 .header_color {
-  background-color:#4DBDDB;
+  background-color: #4dbddb;
 }
 .header_transparent {
   background-color: transparent;
@@ -5677,9 +5677,15 @@ body.boxed {
 }
 @media (max-width: 1199px) {
   .logo img {
-    max-width: 200px;
+    max-width: 100px;
+    margin-top: -3rem;
   }
 }
+/* @media screen and (max-width: 768px) {
+  logo img {
+    max-width: 78px;
+  }
+} */
 .ls .logo {
   color: #19bcdb;
 }
@@ -7941,7 +7947,7 @@ body.active-side-header.slide-right .page_header_side {
 .page_toplogo .small-teaser {
   vertical-align: middle;
   display: inline-block;
-  min-width: 270px;
+  /* min-width: 200px; */
 }
 .page_toplogo .teaser .media-left,
 .page_toplogo .small-teaser .media-left {
@@ -10449,6 +10455,8 @@ aside .with_padding {
   display: inline-block;
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
+  justify-content: flex-start;
 }
 .inline-teasers-wrap > * {
   vertical-align: middle;
@@ -10459,6 +10467,12 @@ aside .with_padding {
     margin-left: -25px;
     margin-right: -25px;
   }
+  /* @media screen and (min-width: 768px) {
+    .inline-teasers-wrap {
+      display: flex;
+      justify-content: start;
+    }
+  } */
   .inline-teasers-wrap > * {
     margin: 10px 25px;
   }
@@ -10522,6 +10536,17 @@ aside .with_padding {
   line-height: 2em;
   margin-top: -2px;
 }
+@media screen and (max-width: 768px) {
+  .teaser .border_icon i {
+    font-size: 12px;
+    margin-top: -6px;
+  }
+  .teaser .border_icon {
+    width: 1em;
+    height: 1em;
+  }
+}
+
 .teaser i {
   text-align: center;
   vertical-align: middle;
@@ -12500,5 +12525,8 @@ a.color-icon.border-icon:hover {
 @media screen and (max-width: 768px) {
   .small-teaser h4 {
     font-size: 12px !important;
+  }
+  .topbar {
+    padding-top: 0;
   }
 }
