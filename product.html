@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+    <title>EydiaCure</title>
+    <meta charset="utf-8">
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/shop.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+    <style>
+        .career-text p {
+            font-size: 18px;
+            line-height: 2;
+            font-weight: 400;
+
+        }
+
+        .item {
+            border: 1px solid #000f9c;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px 0px darkslategrey;
+            /* width: 567px; */
+            height: 133px;
+            transition: all 0.5s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            /* transform: translateZ(-10px); */
+        }
+
+        .products {
+            margin-top: 2rem;
+        }
+        .special{
+            color: #2a5591;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="preloader_image"></div>
+    </div>
+    <!-- search modal -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button
+            type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <i class="rt-icon2-cross2"></i>
+            </span>
+        </button>
+        <div class="widget widget_search">
+            <form method="get" class="searchform search-form form-inline"
+                action="https://html.modernwebtemplates.com/pharma/">
+                <div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control"
+                        placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit"
+                    class="theme_button">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls with_padding">
+
+        </div>
+    </div>
+    <!-- eof .modal -->
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
+            <!-- template sections -->
+
+            <section
+                class="page_toplogo table_section table_section_md ls section_padding_top_25 section_padding_bottom_25">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 text-center text-md-left"> <a href="index.html" class="logo top_logo">
+                                <img src="img/eydiacure-logo.png" alt="">
+                            </a> </div>
+                        <div class="col-md-9 text-center text-md-right">
+                            <div class="inline-teasers-wrap">
+                                <div class="teaser small-teaser media">
+                                    <div class="media-left media-middle">
+                                        <div class="teaser_icon size_small border_icon highlight2 rounded"> <i
+                                                class="rt-icon2-pen"></i> </div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h4> 011-41787281</h4>
+                                        <p class="greylinks fontsize_12"> <a href="#"><span class="__cf_email__"
+                                                    data-cfemail="#"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="teaser small-teaser media">
+                                    <div class="media-left media-middle">
+                                        <div class="teaser_icon size_small border_icon highlight2 rounded"> <i
+                                                class="rt-icon2-map-pin"></i> </div>
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <h4>B-127, Okhla Industrial Area, Phase 1 </h4>
+                                        <p class="greylinks fontsize_12">New Delhi 10020 </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <header class="page_header header_color toggler_left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 display_table">
+                            <div class="header_mainmenu display_table_cell">
+                                <!-- main nav start -->
+                                <nav class="mainmenu_wrapper text-center">
+                                    <ul class="mainmenu nav sf-menu">
+                                        <li> <a href="index.html">Home</a>
+
+                                        </li>
+                                        <li> <a href="about.html">About</a>
+
+                                        </li>
+
+                                        <li> <a href="careers.html">Careers</a>
+
+                                        </li>
+                                        <li> <a href="events.html">Events</a>
+
+                                        </li>
+                                        <li> <a href="product.html">Products</a>
+
+                                        </li>
+                                        <li> <a href="contact.html">Contacts</a>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                                <!-- end of main nav -->
+                                <!-- header toggler --><span class="toggle_menu"><span></span></span>
+                            </div>
+                            <div class="header_right_buttons cs display_table_cell text-right">
+                                <ul class="inline-list menu greylinks">
+                                    <li> <a href="#" class="search_modal_button header-button">
+                                            <i class="fa fa-" aria-hidden="true"></i>
+                                        </a> </li>
+                                    <li> <a href="shop-register.html" class="header-button">
+                                            <!-- <i class="fa fa-user" aria-hidden="true"></i> -->
+                                        </a> </li>
+                                    <li> <a href="shop-cart-right.html" class="header-button">
+                                            <!-- <i class="fa fa-shopping-basket" aria-hidden="true"></i> -->
+                                        </a> </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="page_breadcrumbs ds color parallax section_padding_top_75 section_padding_bottom_75">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <h2 style="text-transform: uppercase;">Innovative And Exclusive Products</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- products section starts from here  -->
+            <section class="products mt-5" style="margin-bottom: 100px;">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <img src="images/sipme.jpg" alt="">
+                        </div>
+
+                        <div class="container">
+                            <div class="product-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/Nemotriv Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/CREXIN-B logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img src="images/Eydinem EDTA-Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/Eydipime 2.5-Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/Oxythion Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img src="images/Panxia-Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/PIXIZA-logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img height="100px" width="400px" src="images/Skovic-Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item">
+                                            <img src="images/Docxia-Logo.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- products section end here -->
+
+
+            <footer class="page_footer ds color section_padding_top_100 section_padding_bottom_65 table_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-logo">
+                                <img src="img/eydiacure-logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Registered Office</h4>
+                            <div>
+                                <div style="margin-bottom: 10px; color: #fff;" class="add">
+                                    <i class="fa fa-map-marker highlight ms-2" aria-hidden="true"></i><span
+                                        style="margin-left: 10px;" class="ms-2">B-127 , Okhla
+                                        Industrial Area,</span>
+                                    <p style="margin-left: 18px;">Phase 1, New Delhi 10020</p>
+                                </div>
+                                <div style="margin-bottom: 10px;" class="email">
+                                    <i class="fa fa-pencil highlight" aria-hidden="true"></i><span
+                                        style="margin-left: 10px;"><span class="oceanwp-contact-title"></span><a
+                                            href="info@eydiacure.com">info@eydiacure.com</span>
+
+                                </div>
+                                <div style="margin-bottom: 10px;" class="tell">
+                                    <i class="fa fa-phone highlight" aria-hidden="true"></i>
+                                    <span style="margin-left: 10px;"><a href="011-41787281">011-41787281</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>UAE Office</h4>
+                            <div>
+                                <div style="margin-bottom: 10px; color: #fff;" class="add">
+                                    <i class="fa fa-map-marker highlight ms-2" aria-hidden="true"></i><span
+                                        style="margin-left: 10px;" class="ms-2">Univolts General Trading FZCO,</span>
+                                    <p style="margin-left: 18px;">DDP Building A2 , Dubai Silicon Oasis
+                                        <span>Dubai-U.A.E, P,O Box:22706</span>
+                                    </p>
+                                </div>
+                                <div style="margin-bottom: 10px;" class="email">
+                                    <i class="fa fa-pencil highlight" aria-hidden="true"></i><span
+                                        style="margin-left: 10px;"><span class="oceanwp-contact-title"></span><a
+                                            href="info@univolts.co">info@univolts.co</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+            </footer>
+            <section class="ds color darker page_copyright section_padding_15">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <p class="fontsize_12">&copy; Copyright 2022. All Rights Reserved by <a
+                                    href="eydiacure">eydiacure</a> and developed by <a href="https://xltech.co.in/">XL
+                                    Technologies</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- eof #box_wrapper -->
+    </div>
+    <!-- eof #canvas -->
+    <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
