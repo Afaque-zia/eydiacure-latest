@@ -15,14 +15,12 @@
 	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
 	<link rel="stylesheet" href="css/shop.css">
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
+	
 	<style>
-		.text-center .section_header+p {
+		.text-center .section_header~p {
 			margin-top: 0;
+			color: #fff;
+			font-size: 20px;
 		}
 	</style>
 </head>
@@ -32,75 +30,16 @@
 	<div class="preloader">
 		<div class="preloader_image"></div>
 	</div>
-	<!-- search modal -->
-	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button
-			type="button" class="close" data-dismiss="modal" aria-label="Close">
-			<span aria-hidden="true">
-				<i class="rt-icon2-cross2"></i>
-			</span>
-		</button>
-		<div class="widget widget_search">
-			<form method="get" class="searchform search-form form-inline"
-				action="https://html.modernwebtemplates.com/pharma/">
-				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control"
-						placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit"
-					class="theme_button">Search</button>
-			</form>
-		</div>
-	</div>
-	<!-- Unyson messages modal -->
-	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-		<div class="fw-messages-wrap ls with_padding">
-
-		</div>
-	</div>
-	<!-- eof .modal -->
-	<!-- wrappers for visual page editor and boxed version of template -->
 	<div id="canvas">
 		<div id="box_wrapper">
-			<!-- template sections -->
-
-			<section
-				class="page_toplogo table_section table_section_md ls section_padding_top_25 section_padding_bottom_25">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-3  text-md-left"> <a href="index.html" class="logo top_logo">
-								<img src="img/eydiacure-logo.png" alt="">
-							</a> </div>
-						<div class="col-md-9 text-center text-md-right">
-							<div class="inline-teasers-wrap">
-								<div class="teaser small-teaser media">
-									<div class="media-left media-middle">
-										<div class="teaser_icon size_small border_icon highlight2 rounded"> <i
-												class="rt-icon2-pen"></i> </div>
-									</div>
-									<div class="media-body media-middle">
-										<h4> 011-41787281</h4>
-										<p class="greylinks fontsize_12"> <a href="#"><span class="__cf_email__"
-													data-cfemail="#"></span></a>
-										</p>
-									</div>
-								</div>
-								<div class="teaser small-teaser media">
-									<div class="media-left media-middle">
-										<div class="teaser_icon size_small border_icon highlight2 rounded"> <i
-												class="rt-icon2-map-pin"></i> </div>
-									</div>
-									<div class="media-body media-middle">
-										<h4>B-127, Okhla Industrial Area, Phase 1 </h4>
-										<p class="greylinks fontsize_12">New Delhi 10020 </p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 			<header class="page_header header_color toggler_left">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 display_table">
 							<div class="header_mainmenu display_table_cell">
+								<div class="col-md-3  text-md-left"> <a href="index.html" class="logo top_logo">
+									<img src="img/eydiacure-logo.png" alt="">
+								</a> </div>
 								<!-- main nav start -->
 								<nav class="mainmenu_wrapper text-center">
 									<ul class="mainmenu nav sf-menu">
@@ -126,20 +65,8 @@
 									</ul>
 								</nav>
 								<!-- end of main nav -->
-								<!-- header toggler --><span class="toggle_menu"><span></span></span>
-							</div>
-							<div class="header_right_buttons cs display_table_cell text-right">
-								<ul class="inline-list menu greylinks">
-									<li> <a href="#" class="search_modal_button header-button">
-											<i class="fa fa-" aria-hidden="true"></i>
-										</a> </li>
-									<li> <a href="shop-register.html" class="header-button">
-											<!-- <i class="fa fa-user" aria-hidden="true"></i> -->
-										</a> </li>
-									<li> <a href="shop-cart-right.html" class="header-button">
-											<!-- <i class="fa fa-shopping-basket" aria-hidden="true"></i> -->
-										</a> </li>
-								</ul>
+								<!-- header toggler -->
+								<span class="toggle_menu"><span></span></span>
 							</div>
 						</div>
 					</div>
@@ -157,24 +84,14 @@
 			</section>
 			<section id="about" class="ls section_padding_top_150 section_padding_bottom_150">
 				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="section_header"> Welcome to Our Site! </h2>
-							<p>We are a biopharmaceutical company focused on the discovery, development and
-								commercialization of innovative therapies intended to improve outcomes in patients
-								sufferings</p>
-						</div>
-					</div>
 					<div class="row columns_margin_bottom_20">
 
 						<div class="col-md-6 col-sm-6">
 							<div
 								class="teaser hover_icon with_padding big-padding with_border rounded text-center with_corner_border">
-								<div class="teaser_icon size_big highlight"> <i class="rt-icon2-bulb"></i> </div>
-								<h4 class="topmargin_20 hover-color2"><a href="departments.html">Our Vision</a></h4>
-								<p class="content-3lines-ellipsis">To be recognized as a preeminent pharmaceutical
-									company with unmet medical needs and solutions by providing the utmost in
-									value-added medicine through dedication and innovation</p>
+								<div class="teaser_icon size_big highlight"><img src="https://afaque-zia.github.io/Eydiacure/media/images/home6/vision.jpg" width="100%"></div>
+								<h4 class="topmargin_20 hover-color2"><a href="departments.html">Vision</a></h4>
+								<p class="content-3lines-ellipsis">To be recognized as a preeminent pharmaceutical company with unmet medical needs and solutions by providing the utmost in value-added medicine through dedication and innovation</p>
 								<p class="topmargin_30 bottommargin_0"> <a href="product.html"
 										class="theme_button color2 min_width_button">Discover Now</a> </p> <span
 									class="bottom_corners"></span>
@@ -182,11 +99,9 @@
 						</div>
 						<div class="col-md-6 col-sm-6 col-sm-offset-3 col-md-offset-0">
 							<div class="teaser hover_icon with_padding big-padding with_border rounded text-center">
-								<div class="teaser_icon size_big highlight"> <i class="rt-icon2-paperplane"></i> </div>
+								<div class="teaser_icon size_big highlight"><img src="https://afaque-zia.github.io/Eydiacure/media/images/home6/mission.jpg" width="100%"></div>
 								<h4 class="topmargin_20 hover-color2"><a href="product.html">Our Mission</a></h4>
-								<p class="content-3lines-ellipsis">We seek to uphold our social responsibilities of
-									delivering highest standard and cost effective products available to all and
-									operates with unbending ethical standards</p>
+								<p class="content-3lines-ellipsis">We seek to uphold our social responsibilities of delivering highest standard and cost effective products available to all and operates with unbending ethical standards.</p>
 								<p class="topmargin_30 bottommargin_0"> <a href="product.html"
 										class="theme_button color2 inverse min_width_button">Check It</a> </p>
 							</div>
@@ -217,57 +132,83 @@
 					</div>
 				</div>
 			</section>
-			<section class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30">
+			<section id="features"
+				class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
 							<h2 class="section_header">Why Choose Us?</h2>
-							<p>Pig hamburger turducken frankfurter shoulder, leberkas shankle bresaola meatball strip
-								steak ham beef ribs. Turducken tongue shank frankfurter pancetta shoulder landjaeger
-								sausage boudin filet mignon. Kevin venison ham hock.</p>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="teaser media hover_icon">
-								<div class="media-left">
-									<div class="teaser_icon rounded main_bg_color size_small"> <i
-											class="rt-icon2-diamond2"></i> </div>
-								</div>
-								<div class="media-body toppadding_10">
-									<h5 class="hover-color2"><a href="#">Newest Technologies</a></h5>
-									<p>Consetetur sadipscing elitr diam nonumy eirmod tempor invidunt.</p>
-								</div>
-							</div>
-							<div class="teaser media hover_icon">
-								<div class="media-left">
-									<div class="teaser_icon rounded main_bg_color size_small"> <i
-											class="rt-icon2-cloud"></i> </div>
-								</div>
-								<div class="media-body toppadding_10">
-									<h5 class="hover-color2"><a href="#">Taking Care of Nature</a></h5>
-									<p>Ut labore et dolore magna aliquyam erat sed diam voluptua.</p>
-								</div>
-							</div>
+					</div>
+					<div class="row vertical-tabs">
+						<div class="col-sm-5">
+							<!-- Nav tabs -->
+							<ul class="nav" role="tablist">
+								<li class="active"> <a href="#vertical-tab1" role="tab" data-toggle="tab">Profession a
+										will for voluntary compliance</a> </li>
+								<li> <a href="#vertical-tab2" role="tab" data-toggle="tab">Ethical and Regulation
+										Compliance Standard</a> </li>
+								<li> <a href="#vertical-tab3" role="tab" data-toggle="tab">Innovative Product
+										Portfolio</a> </li>
+							</ul>
 						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="teaser media hover_icon">
-								<div class="media-left">
-									<div class="teaser_icon rounded main_bg_color size_small"> <i
-											class="rt-icon2-tag2"></i> </div>
+						<div class="col-sm-7">
+							<!-- Tab panes -->
+							<div class="tab-content no-border">
+								<div class="tab-pane fade in active" id="vertical-tab1">
+									<h3 class="poppins">Profession a will for voluntary compliance</h3>
+									<p>EydiaCure Pvt Ltd has been doing an enhanced practical programme on regulations
+										and training for our members to raise awareness of continuous compliance for a
+										long time. This is to make sure that relevant regulations, such as the fair
+										trade act, anti-graft law, and pharmaceutical affairs act, are followed. Even
+										though we try to manage in a way that follows the law and adapts to changes in
+										the outside world, such as changes in government policy and new rules, if you
+										break the law by accident, it can hurt not only you but also our company and
+										customers.</p>
 								</div>
-								<div class="media-body toppadding_10">
-									<h5 class="hover-color2"><a href="#">Fair Prices</a></h5>
-									<p>At vero eos et accusam ejusto duo dolores et ea rebum clita gubergren.</p>
+								<div class="tab-pane fade" id="vertical-tab2">
+									<h3 class="poppins">Ethical and Regulation Compliance Standard</h3>
+									<p>All executives and workers of EydiaCure Pvt Ltd are expected to put the needs of
+										their clients first in all aspects of their work, including listening to their
+										feedback, accepting their word when it comes to what they want, and acting
+										accordingly.</p>
+									<details>
+										<summary>Compliance with Laws and Regulations</summary>
+										<p>
+											Executives and employees of EydiaCure Pvt Ltd are required to follow not
+											only this Standard but also all applicable Indian laws (such as the Fair
+											Trade Act, Pharmacy Act, Pharmaceutical Safety Regulation, Commercial Code,
+											Tax Code, Industrial Safety and Health Act, Wastes Control Act, and others),
+											regulations, company regulations, and ethical standards.
+										</p>
+									</details>
+									<details>
+										<summary>Gifts and Entertainment</summary>
+										<p>The management and staff at EydiaCure Pvt Ltd are not obligated to accept or
+											provide any gifts or entertainment of the types listed below in the course
+											of conducting business.
+											Providing gifts, entertainment, or special treatment with the goal of
+											influencing product-related business decisions.
+											Providing gifts, entertainment, or special treatment throughout the current
+											purchase or contract decision-making process.
+											All monetary presents, such as “Gift Certificates.”</p>
+									</details>
+									<details>
+										<summary>Environment, Prodhealth and safety</summary>
+										<p>In all business activities, the executives and employees of EydiaCure Pvt Ltd
+											shall engage in ways that ensure the safety of oneself and others, or
+											methods that comply with the conditions of the relevant environment, health,
+											and safety.</p>
+
+									</details>
+
 								</div>
-							</div>
-							<div class="teaser media hover_icon">
-								<div class="media-left">
-									<div class="teaser_icon rounded main_bg_color size_small"> <i
-											class="rt-icon2-cloud"></i> </div>
+								<div class="tab-pane fade" id="vertical-tab3">
+									<h3 class="poppins">Innovative Product Portfolio</h3>
+									<p>EydiaCure Pvt Ltd focuses on creating an innovative product line with enhancement
+										of technology.</p>
 								</div>
-								<div class="media-body toppadding_10">
-									<h5 class="hover-color2"><a href="#">High Customer Satisfaction</a></h5>
-									<p>Nosea takimata sanctus est lorem ipsum dolor sit amet.</p>
-								</div>
+
 							</div>
 						</div>
 					</div>
