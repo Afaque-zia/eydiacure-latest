@@ -5678,7 +5678,6 @@ body.boxed {
 @media (max-width: 1199px) {
   .logo img {
     max-width: 100px;
-    margin-top: -3rem;
   }
 }
 /* @media screen and (max-width: 768px) {
@@ -5992,7 +5991,7 @@ body.boxed {
 .header_mainmenu {
   overflow: visible;
   width: 10000px;
-  padding: 0 15px;
+  padding: 15px;
 }
 .header_right_buttons {
   white-space: nowrap;
@@ -8593,7 +8592,7 @@ section .intro_section .slide_description_wrapper {
   .toggle_menu {
     position: absolute;
     top: 50%;
-    left: 50%;
+    right: 50%;
     margin-left: -30px;
     margin-top: -30px;
     width: 60px;
@@ -8607,8 +8606,7 @@ section .intro_section .slide_description_wrapper {
     left: auto;
   }
   .toggler_left .toggle_menu {
-    right: auto;
-    left: 0;
+    right: 10px;
     margin-left: 0;
   }
 }
@@ -10647,9 +10645,6 @@ aside .with_padding {
 }
 .teaser.hover_bg_teaser {
   transition: background-color 0.2s ease 0s;
-}
-.teaser.hover_bg_teaser.ls:hover {
-  background-color: #2a5591;
 }
 .teaser.hover_bg_teaser.ls:hover .highlight2 {
   color: #fff;
