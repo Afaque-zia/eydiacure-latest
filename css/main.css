@@ -2627,7 +2627,28 @@ html[xmlns] .slides {
 }
 .ds .flex-control-paging li a,
 .cs .flex-control-paging li a {
-  border-color: #fff;
+  border-color: #2a5591;
+}
+.main-heading{
+  color: #2a5591 !important;
+}
+.custom-row{
+  display: flex;
+  align-items: center;
+}
+@media (max-width:767px){
+  .section-heading, .poppins, h3{
+    font-size: 20px;
+  }
+  .custom-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+  .row.custom-row:nth-child(even){
+    flex-direction: column-reverse;
+  }
 }
 .flex-control-paging li a:hover,
 .flex-control-paging li a.flex-active {
@@ -3779,9 +3800,10 @@ header [class*="col-"],
   opacity: 0.7;
 }
 .parallax.ds.color:after {
-  background-color: #11333a;
+  background-color: #eafbff;
   opacity: 0.9;
 }
+
 .background_cover.ds.color:after {
   background-color: #11333a;
   opacity: 0.5;
@@ -3941,6 +3963,11 @@ header [class*="col-"],
 @media (min-width: 1200px) {
   .section_header {
     font-size: 40px;
+  }
+}
+@media (max-width:767px){
+  .section_header{
+    font-size: 20px !important;
   }
 }
 .text-center .section_header + p {
@@ -5544,7 +5571,7 @@ body.boxed {
   background-color: rgba(152, 152, 152, 0.2);
 }
 .header_color {
-  background-color: #4dbddb;
+  background-color: #fff;
 }
 .header_transparent {
   background-color: transparent;
@@ -6790,7 +6817,13 @@ body.active-side-header.slide-right .page_header_side {
   background-color: #000;
 }
 .ds.color {
-  background-color: #11333a;
+  background-color: #ddf9ff;
+}
+footer h4, footer span, footer p, footer a, footer i {
+  color: #2a5591 !important;
+}
+.s-heading{
+  color: #2a5591 !important;
 }
 .ds.color.darker {
   background-color: #0e292e;
@@ -7008,7 +7041,7 @@ body.active-side-header.slide-right .page_header_side {
   border-color: rgba(152, 152, 152, 0.2);
 }
 .ds .highlight {
-  color: #19bcdb;
+  color: #fff;
   border-color: #19bcdb;
 }
 .ds .highlight2 {
@@ -8238,7 +8271,7 @@ section .intro_section .slide_description_wrapper {
   vertical-align: top;
 }
 .intro_section h2 {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 0.8;
   margin-bottom: 0.6em;
   margin-top: 0.27em;
@@ -8269,7 +8302,7 @@ section .intro_section .slide_description_wrapper {
 }
 @media (min-width: 1200px) {
   .intro_section h2 {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 @media (min-width: 1450px) {
@@ -8424,7 +8457,7 @@ section .intro_section .slide_description_wrapper {
     color: #2a5591;
   }
   .header_color ul a {
-    color: #fff;
+    color: #2a5591;
   }
   .header_color ul li.active > a {
     color: #11333a;
