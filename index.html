@@ -38,13 +38,14 @@
 
 										</li>
 
-										<li> <a href="events.html">Events</a>
-
-										</li>
+										
 										<li> <a href="product.html">Products</a>
 
 										</li>
 										<li> <a href="careers.html">Careers</a>
+
+										</li>
+										<li> <a href="events.html">Events</a>
 
 										</li>
 										<li> <a href="contact.html">Contacts</a>
@@ -59,7 +60,7 @@
 					</div>
 				</div>
 			</header>
-			<section class="intro_section page_mainslider ds color">
+			<section class="intro_section page_mainslider ds color" style="background-color: #11333a;">
 				<div class="flexslider" data-dots="true" data-nav="false">
 					<ul class="slides">
 						<li> <img src="images/slide02.jpg" alt="">
@@ -71,9 +72,7 @@
 												<div class="intro-layer with_corner_border with_padding huge-padding"
 													data-animation="slideExpandUp">
 
-													<h2 style="line-height: 1.2;" class="highlight s-heading"> PRODUCING HIGH
-														QUALITY PHARMACEUTICALS
-														PRODUCTS
+													<h2 style="line-height: 1.2;color:#fff !important;" class="highlight s-heading"> Producing High Quality Pharmaceuticals Products ...
 													</h2>
 													<span class="bottom_corners"></span>
 												</div>
@@ -97,8 +96,7 @@
 												<div class="intro-layer with_corner_border with_padding huge-padding"
 													data-animation="slideExpandUp">
 
-													<h2 style="line-height: 1.2;" class="highlight s-heading"> COMMITED FOR THE
-														INOVATIVE AND UNIQUE PRODUCTS
+													<h2 style="line-height: 1.2;color:#fff !important" class="highlight s-heading"> Commited for The Innovative and Unique Products ...
 													</h2>
 													<span class="bottom_corners"></span>
 												</div>
@@ -122,9 +120,7 @@
 												<div class="intro-layer with_corner_border with_padding huge-padding"
 													data-animation="slideExpandUp">
 
-													<h2 style="line-height: 1.2;" class="highlight s-heading">WE ARE TRYING TO
-														CREATE A HEALTHY LIFE
-														FOR ALL
+													<h2 style="line-height: 1.2;color:#fff !important" class="highlight s-heading">We are Commited to Create a Healthy Life for All ...
 													</h2>
 													<span class="bottom_corners"></span>
 												</div>
@@ -152,13 +148,13 @@
 						<div class="col-md-6 col-md-pull-6 display_table_cell_md">
 							<h2 class="section_header" style="color:#2a5591;">ABOUT US</h2>
 							<p class="highlight bottommargin_20"
-								style="font-size: 20px;color:#2a5591;line-height: 25px;letter-spacing: 1px;text-align:justify;">
+								style="">
 								Good
 								health is vital to all of us, and finding sustainable solutions to the most pressing
 								health care challenges of our world cannot wait.
 								Aiming to improve the quality healthcare service EydiaCure has been established by a
-								group of healthcare professionals EydiaCure is a subsidiary of UNIVOLTS LLC, DUBAI, and
-								Our partnership with UNIVOLTS LLC, aim to bring innovative products and expertise to
+								group of healthcare professionals EydiaCure is a subsidiary of <a href="http://univolts.co/" style="color: #646368;font-weight: 600;" alt="" target="_blank">UNI<span style="color:#871C1A;">VOLTS</span> LLC,</a> <span style="color: #646368;font-weight: 600;">DUBAI,</span> and
+								Our partnership with <a href="http://univolts.co/" style="color: #646368;font-weight: 600;"  alt="" target="_blank">UNI<span style="color:#871C1A;">VOLTS</span> LLC,</a> aim to bring innovative products and expertise to
 								fulfil the unmet needs of the medical fraternity in India. Life's all about staying
 								healthy and enjoying the good things in life! However, illness is inevitable at all
 								stages of life. That's why we at EydiaCure are committed to applying our knowledge,
@@ -239,7 +235,7 @@
 								<div class="teaser_icon size_big highlight"><img
 										src="./images/mission.jpeg"
 										width="100%"></div>
-								<h4 class="topmargin_20 hover-color2"><a href="product.html" class="s-heading">Our Mission</a></h4>
+								<h4 class="topmargin_20 hover-color2"><a href="product.html" class="s-heading">Mission</a></h4>
 								<p class="content-3lines-ellipsis">We seek to uphold our social responsibilities of
 									delivering highest standard and cost effective products available to all and
 									operates with unbending ethical standards.</p>
@@ -279,7 +275,7 @@
 							
 							<div class="row custom-row" >
 								<div class="col-md-6">
-									<img src="images/about-side-img.png" alt="">
+									<img src="images/regulatory-compliance.jpeg" width="100%" alt="">
 								</div>
 								<div class="col-md-6">
 									<h3 class="poppins">Ethical and Regulation Compliance Standard</h3>
@@ -410,6 +406,16 @@
 	<script src="js/compressed.js"></script>
 	<script src="js/main.js"></script>
 	<!--  -->
+	<script>
+		let i = 0;
+		let x = setInterval(()=>{
+			document.querySelectorAll("ol.flex-control-nav.flex-control-paging li a")[i].click();
+			i++;
+			if(i >= 3){
+					i = 0;
+				}
+		},5000)
+	</script>
 </body>
 
 </html>
