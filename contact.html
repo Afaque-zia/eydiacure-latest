@@ -78,8 +78,12 @@
 						<div class="col-sm-8 to_animate" data-animation="scaleAppear">
 							<h3>Contact Form</h3>
 							<form class=" row columns_padding_10" action="https://formsubmit.co/f0e25510877e9eac315f4b21e41785fa" method="POST">
-								<!-- <input type="hidden" name="_captcha" value="false">
-								<input type="hidden" name="_subject" value="New Email!"> -->
+								<!-- Honeypot -->
+								<input type="text" name="_honey" style="display: none;">
+								<!-- Disable Captcha -->
+								<input type="hidden" name="_captcha" value="false">
+								<input type="hidden" name="_next" value="https://afaque-zia.github.io/eydiacure-latest/thankyou.html">
+								<!-- <input type="hidden" name="_subject" value="New Email!"> -->
 								<!-- <input type="hidden" name="_template" value="table"> -->
 								<div class="col-sm-6">
 									<div class="contact-form-name">
@@ -98,7 +102,6 @@
 											type="text" size="30" value="" name="phone" id="phone" class="form-control"
 											placeholder="Phone Number" required> </div>
 								</div>
-								<input type="hidden" name="_next" value="http://eydiacure.com/thankyou.html">
 								<div class="col-sm-12">
 									<div class="contact-form-message"> <label for="message">Message</label> <textarea
 											aria-required="true" rows="5" cols="45" name="message" id="message"
